@@ -96,7 +96,7 @@ cd openshift-ansible && git fetch && git checkout release-3.9 && cd ..
 cat <<EOD > /etc/hosts
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
-${IP}		$(hostname) oocp oocp.${DOMAIN}  
+${IP}		$(hostname) console console.${DOMAIN}  
 EOD
 
 if [ -z $DISK ]; then 
@@ -164,13 +164,13 @@ systemctl restart origin-master-api
 
 echo "******"
 
-echo "* Your console is https://oocp.$DOMAIN:$API_PORT"
+echo "* Your console is https://console.$DOMAIN:$API_PORT"
 echo "* Your username is $USERNAME "
 echo "* Your password is $PASSWORD "
 echo "*"
 echo "* Login using:"
 echo "*"
-echo "$ oc login -u ${USERNAME} -p ${PASSWORD} https://oocp.$DOMAIN:$API_PORT/"
+echo "$ oc login -u ${USERNAME} -p ${PASSWORD} https://console.$DOMAIN:$API_PORT/"
 echo "******"
 
-oc login -u ${USERNAME} -p ${PASSWORD} https://oocp.$DOMAIN:$API_PORT/
+oc login -u ${USERNAME} -p ${PASSWORD} https://console.$DOMAIN:$API_PORT/

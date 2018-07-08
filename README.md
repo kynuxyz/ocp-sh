@@ -4,7 +4,7 @@ ip lan: 192.168.1.240
 
 main domain: kynu.xyz
 
-cau hinh domain: oocp.kynu.xyz, *.apps.kynu.xyz (A) = ip wan 
+cau hinh domain: console.kynu.xyz, *.apps.kynu.xyz (A) = ip wan 
 
 ---------------------
 oc cluster up
