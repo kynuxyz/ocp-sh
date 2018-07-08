@@ -6,6 +6,6 @@ cd .. && ./install-openshift.sh;
 -----------------------------
 main domain: kynu.xyz
 ip lan: 192.168.1.240
-cau hinh domain: console.kynu.xyz, *.apps.kynu.xyz (A) = ip wan 
+cau hinh domain: console.kynu.xyz, *.oocp.kynu.xyz (A) = ip wan 
 -----------------------------
 
