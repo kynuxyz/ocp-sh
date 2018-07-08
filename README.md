@@ -4,10 +4,7 @@ ip lan: 192.168.1.240
 
 main domain: kynu.xyz
 
-cau hinh domain: console, *.apps.kynu.xyz (A) = ip wan 
+cau hinh domain: oocp.kynu.xyz, *.apps.kynu.xyz (A) = ip wan 
 
-%post
-cat > /etc/sysconfig/docker-storage-setup << EOF
-ROOT_SIZE=20G
-EOF
-%end
+---------------------
+oc cluster up
